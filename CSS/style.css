@@ -1,4 +1,7 @@
-content_contacts {
-                  height: 200px; 
-                  background: url(map.png) 100% 100% no-repeat;
-                 }
+[hidden] {
+    display: none;
+  }
+body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
