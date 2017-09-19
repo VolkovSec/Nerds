@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
     <title>Nerd's</title>
 </head>
 <body>
+  <div class="main_site">
     <header class="main_header">
-      <div class="main_header_conteiner">
+      <div class="main_header_conteiner clearfix">
         <figure class="main_header_logo">
                 <a href="index.html">
                     <img src="IMG\nerds_logo.png" width="" height="" alt="Nerd's">
@@ -29,16 +29,22 @@
             <li class="main_nav_item">
               <a href="">Контакты</a>
             </li>
-            <li class="main_nav_basket">
-              <a href=""><img src='IMG\basket_icn.png'>Корзина</a>
-            </li>
+            
           </ul>
         </nav>
-      </div>     
+        <div class="main_nav_basket">
+          <ul>
+            <li class="main_nav_item">
+              <a href=""><img src='IMG\basket_icn.png'>Корзина</a>
+            </li>          
+          </ul>
+        </div>     
+      </div>   
+
       <div class="main_header_slider"> 
-        <div class="main_header_slider_items"> 
-          <div class="slider_item"> 
-            <div class="slider_item_slogan">
+        <div class="main_header_slider_items clearfix"> 
+          <div class="slider_item_1">
+             <div class="slider_item_slogan">
               <h1>Долго, дорого, скрупулёзно.</h1>
               <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
               <div class="slider_item_slogan_extrainfo">
@@ -47,49 +53,51 @@
             </div> <!-- slider_item_slogan Slide 1 -->
             <figure class="slider_item_img">
               <img src="IMG\slider_item_1.png">
-            </figure>  
-          </div>
-          <div class="slider_item"> 
-            <div class="slider_item_slogan">
-              <h1></h1>
-              <p></p>
+            </figure>
+          </div><!-- slider_item_slogan Slide 1 -->
+
+          <div class="slider_item_2">
+             <div class="slider_item_slogan">
+              <h1>Долго, дорого, скрупулёзно.</h1>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
               <div class="slider_item_slogan_extrainfo">
                 <a href="">Узнать больше</a>
               </div>
             </div> <!-- slider_item_slogan Slide 2 -->
             <figure class="slider_item_img">
               <img src="IMG\slider_item_2.png">
-            </figure>
-          </div>
-          <div class="slider_item_slider_item"> 
-            <div class="slider_item_slogan">
-              <h1></h1>
-              <p></p>
+            </figure>      
+          </div><!-- slider_item_2 -->
+
+          <div class="slider_item_3">
+             <div class="slider_item_slogan">
+              <h1>Долго, дорого, скрупулёзно.</h1>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
               <div class="slider_item_slogan_extrainfo">
                 <a href="">Узнать больше</a>
               </div>
-            </div> <!-- slider_item_slogan Slide 3 -->
+            </div> <!-- slider_item_slogan Slide 1 -->
             <figure class="slider_item_img">
               <img src="IMG\slider_item_3.png">
             </figure>
-          </div>
-        </div>  <!-- main_header_slider_items -->
+          </div><!-- slider_item_3 -->
+        </div>  <!-- main_header_slider_items -->  
         <div class="slider_control">
           <input type="radio" name="slider_control_radio">
           <input type="radio" name="slider_control_radio" checked>
           <input type="radio" name="slider_control_radio">
-        </div>
+        </div> 
       </div>  <!-- main_header_slider -->
     </header>
-    
+
     <main class="main_content">
-      <div class="content_products">
+      <div class="content_products clearfix">
         <div class="content_products_item">
           <div class="content_products_item_icon">
             <img src="IMG\product_item_web.jpg">
           </div>
           <h2>Веб-сайты</h2>
-          <p>Мир никогда не будет прежним</p>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <div class="Order_Site">
             <a href="">Заказать</a>
           </div>
@@ -114,8 +122,21 @@
             <a href="">Заказать</a>
           </div>
         </div>
+<!--
+        <div class="content_products_item">
+          <div class="content_products_item_icon">
+            <img src="IMG\product_item_ptt.jpg">
+          </div>
+          <h2>Презентации</h2>
+          <p>Вы даже подозреваете, насколько вы изумительны!</p>
+          <div class="Order_Site">
+            <a href="">Заказать</a>
+          </div>
+        </div>  
+ -->    <!--Проверка на переполнение -->   
       </div> <!-- content_products -->
-      <div class="content_about_company">
+            
+      <div class="content_about_company clearfix">
         <div class="content_devize">
           <h1>Мы-маленькая, но гордая дизайн-студия из Краснодара.</h1>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический рсчёт превыше креатива. Работаем не покладая рук, как роботы</p>        
@@ -134,7 +155,8 @@
           <p>50<sup>%</sup><span>Минимальная предоплата</span></p>
         </div>
       </div> <!-- content_about_company -->
-      <div class="content_partners">
+     
+      <div class="content_partners clearfix">
         <ul>
           <li><a href="https://htmlacademy.ru/"><img src="IMG\partners_html.png" width="" height="" alt="Htmlacademy"></a></li>
           <li><a href="http://barbershop-borodinski.webflow.io/"><img src="IMG\partners_barber.png" width="" height="" alt="Borodinski"></a></li>
@@ -166,5 +188,6 @@
         <p>Скидка 10% для друзёй из социальных сетей</p>
       </div>
     </footer>
+  </div>
 </body>
 </html>
