@@ -453,9 +453,8 @@ body{
     font-family: 'Roboto', sans-serif;
     align-content: center;
 }
-.main_site{
-    width: 1400px;
-    height: 100%; /* высота для наглядности */
+.conteiner{
+    width: 1200px;
     margin: 0 auto; /* задаем отступ слева и справа auto чтобы сработало выравнивание по центру */
 }
 a {
@@ -474,8 +473,8 @@ h2 {
 }
 h3 {
 	font-weight: 500;
-	font-size: 45px;
-  line-height: 45px;
+	font-size: 55px;
+  line-height: 55px;
 }
 h4 {
 	font-weight: 700;
@@ -492,7 +491,7 @@ p {
 /*Настройки стилей main_heder*/
 .main_header {
 	background-color: #eee;
-  padding: 50px 140px 0 140px;
+  padding: 0px 0px 0px 0px;
 }
 .main_header_conteiner{
     height: 70px;
@@ -539,32 +538,28 @@ p {
     height: 418;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
+    position: relative; 
+}
+.slider_item_slogan{
+    float: left;
+    width: 380px;
+    margin: 0px 0px 0px 0px;
+    box-sizing: border-box; /*Включает padding в блок*/
 }
 .slider_item_slogan_extrainfo{
- 	  color: #fff;
-  	background-color: #fb565a;
-  	padding: 15px 40px;
-  	border-radius: 4px;
-    border: 2px solid transparent;
-    width: 185px;        
-}
+    text-align: center;
+    background-color: #fb565a;
+    padding: 15px 0px 15px 0px;
+    border-radius: 5px;
+    width: 200px;
+}  
 .slider_item_slogan_extrainfo a{
-    color: #fff;
-    margin: 0px 50px 0px 0px;
+   color: #fff;
 }
-  
 .main_header_slider_items{
     height: 400;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
-}
-
-.slider_item_slogan{
-    float: left;
-    width: 380px;
-    /*height: 100%;*/
-    margin: 0px 0px 0px 0px;
-    box-sizing: border-box; /*Включает padding в блок*/
 }
 .slider_item_img{
     float: right;
@@ -594,15 +589,23 @@ p {
 }
 .slider_control{
     text-align: center;
-    padding: 0px 0px 0px 0px;
-    
+    margin-left: -10px;
+    position: absolute;
+    left: 50%;
+    top: 80%; 
 }
+  .slider_control input{
+    transform:scale(2);
+    margin-left: 10px;
+    opacity:0.8; /* Прозрак*/
+    cursor:pointer;
+  }
 
 /*Настройки Content*/
 .content_products_item{
     float: left;
     width: 300px;
-    margin: 100px 0px 0px 100px;
+    margin: 100px 100px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 .Order_Site{
@@ -629,7 +632,7 @@ p {
 }
 
 .content_about_company{
-    margin: 100px 0px 0px 100px; 
+    margin: 100px 0px 0px 0px; 
 }
 .content_devize{
     float: left;
@@ -639,7 +642,7 @@ p {
 .content_statistic{
     float: left;
     width: 500px;
-    margin: 0px 0px 0px 100px;
+    margin: 0px 0px 0px 0px;
 }
 .content_statistic p{
     list-style: none; /* Убираем маркеры списка */
@@ -655,8 +658,13 @@ p {
     font-size: 18px;
 }
 .content_partners li{
-    padding: 0px 0px 0px 100px; 
+    padding: 0px 0px 0px 60px; 
 }
 .content_partners img{
   vertical-align: middle;
 }
+
+.slider_control.in_btn2:Checked ~ .main_header_slider_items. {
+	display: block;
+}
+
